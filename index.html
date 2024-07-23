@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .id {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5em;
+        }
+        input {
+            padding: 5px;
+            border-radius: 7px;
+            border: 1px solid #000;
+            outline: none;
+        }
+        input[type=text]:focus {
+            outline: 1px solid #3355fb;
+            padding: 5px;
+            border-radius: 2;
+        }
+        input::placeholder{
+            font-size: 12px;
+            position: relative;
+            right: 0;
+            left: 75%;
+        }
+    </style>
+</head>
+<body>
+    <div class="id">
+        <input id="focusInput" type="text" placeholder="Alt + K">
+    </div>
+
+    <script src="/user.js"></script>
+</body>
+</html>
